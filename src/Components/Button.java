@@ -36,7 +36,7 @@ public class Button extends JPanel{
         g.setColor(new Color(209,10,67));
         g.fillRoundRect(20 + this.myPush,myVerticalShift + this.myPush,this.myButtonWidth,this.myButtonHeight,25,25); //xpos, y pos, width, height
 
-        g.setColor(new Color(255,195,0));
+        g.setColor(new Color(255,255,255));
         //g.drawString(myButtonText,(int)(getWidth()/2-myButtonText.length()*myFont.getSize()/2), (int)(getHeight()/2*myFont.getSize()/2));
         g.drawString(this.myButtonText,-30 + this.myButtonWidth/2 , myVerticalShift+5 + this.myButtonHeight/2);
     }
