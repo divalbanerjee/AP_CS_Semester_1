@@ -15,12 +15,12 @@ public class Button extends JPanel{
     String myButtonText = "New Button";
     int myButtonPadding =  3;
     int myButtonWidth = 150;
-    int myVerticalShift = 0;
-    int myButtonHeight = 60;
-    Color myPaddingColor= Color.GRAY;
-    int myPush = 0;
-    int myButtonposx = 0;
-    int mtButtonposy = 0;
+    private int myVerticalShift = 0;
+    private int myButtonHeight = 60;
+    private Color myPaddingColor = Color.gray;
+    private int myPush = 0;
+    private int myButtonposx = 0;
+    private int mtButtonposy = 0;
 
     public Button(Color backColor){
 
@@ -46,15 +46,15 @@ public class Button extends JPanel{
 
     public void setText(String buttonText){this.myButtonText = buttonText;} //Change text
 
-    public void setPadding(Integer paddingAmount){this.myButtonPadding = paddingAmount;} //Change text
+    public void setPadding(int paddingAmount){this.myButtonPadding = paddingAmount;} //Change text
 
     public void setPaddingColor(Color paddingColor){this.myPaddingColor = paddingColor;} //change padding color of button
 
     public void push(Boolean Pushed){
-        if(Pushed = true){
-            this.myPush = this.myButtonPadding;
+        if(Pushed.booleanValue() == true){
+            this.myPush = -(this.myButtonPadding);
         }
-        else if(Pushed = false){
+        else if(Pushed.booleanValue() == false){
             this.myPush = 0;
         }
     }

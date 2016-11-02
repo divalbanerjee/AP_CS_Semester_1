@@ -5,5 +5,7 @@ package Mains;
  */
 public class MAINPong {
     //This uses the following classes: Button, game timer component, menu,
+    public static void main(String[]args){
 
+    }
 }
