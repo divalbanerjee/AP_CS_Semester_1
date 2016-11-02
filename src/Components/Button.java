@@ -1,7 +1,7 @@
 package Components;
 
 // This is a custom button
-//Not the same as JButton
+//Not to be confused with JButton
 //Used as a custom swing component
 
 import javax.swing.*;
@@ -23,6 +23,7 @@ public class Button extends JPanel{
     int mtButtonposy = 0;
 
     public Button(Color backColor){
+
     }
 
     public void paintComponent(Graphics g){
