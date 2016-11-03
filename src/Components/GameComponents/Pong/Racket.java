@@ -3,7 +3,7 @@ package Components.GameComponents.Pong;
 
  import java.awt.Graphics;
  import java.awt.Rectangle;
-
+/*
  public class Racket {
      private static final int WIDTH = 10, HEIGHT = 60;
      private Pong game;
@@ -43,4 +43,4 @@ package Components.GameComponents.Pong;
      public Rectangle getBounds() {return new Rectangle(x, y, WIDTH, HEIGHT);}
 
      public void paint(Graphics g) {g.fillRect(x, y, WIDTH, HEIGHT);}
- }
+ }*/

@@ -1,5 +1,5 @@
 package GUIWindows;
-
+/*
 import Components.GameComponents.Pong.Ball;
 import Components.GameComponents.Pong.Racket;
 import Mains.MAINPong;
@@ -13,16 +13,16 @@ import java.awt.event.KeyListener;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-public class PongGUI extends JPanel implements ActionListener, KeyListener{
+/*public class PongGUI extends JPanel implements ActionListener, KeyListener{
     private MAINPong game;
     private Ball ball;
     private Racket player1, player2;
     private int score1, score2;
-
-    public PongPanel(Pong game) {
+/*
+    public PongPanel(Pong game) { //FIXME:
         setBackground(Color.WHITE);
-        this.game = game;
-        ball = new Ball(game);
+        this.game = game; // fix this
+        ball = new Ball(game);//fix this
         player1 = new Racket(game, KeyEvent.VK_UP, KeyEvent.VK_DOWN, game.getWidth() - 36);
         player2 = new Racket(game, KeyEvent.VK_W, KeyEvent.VK_S, 20);
         Timer timer = new Timer(5, this);
@@ -84,4 +84,4 @@ public class PongGUI extends JPanel implements ActionListener, KeyListener{
         player1.paint(g);
         player2.paint(g);
     }
-}
+}*/

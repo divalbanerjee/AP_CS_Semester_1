@@ -1,5 +1,5 @@
 package Mains;
-
+/*
 import GUIWindows.PongGUI;
 
 import javax.swing.*;
@@ -11,7 +11,7 @@ import java.awt.*;
 public class MAINPong {
     //This uses the following classes: Button, game timer component, menu,
     public static void main(String[]args){
-        JFrame gameWindow = new PongGUI();
+     //   JFrame gameWindow = new PongGUI();
 
 
     }
