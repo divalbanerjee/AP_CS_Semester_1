@@ -1,4 +1,4 @@
-package Components.GameComponents;
+package Components.GameComponents.Pong;
 
 import java.awt.*;
 
