@@ -13,7 +13,7 @@ import java.awt.*;
  */
 public class TwoPointGUI extends JFrame {
     private Font font = new Font("Helvetica",Font.BOLD, 30);
-    UIManager.LookAndFeelInfo;
+    //UIManager.LookAndFeelInfo;
 
     //component decclarations
     JLabel lbltitle = new JLabel("Two Point");
