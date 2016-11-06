@@ -1,8 +1,4 @@
-package GUIWindows;
-/*
-import Components.GameComponents.Pong.Ball;
-import Components.GameComponents.Pong.Racket;
-import Mains.MAINPong;
+package Components.GameComponents.Pong;
 
 import java.awt.Color;
 import java.awt.Graphics;
@@ -10,19 +6,20 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
+import Labs.Pong;
 import javax.swing.JPanel;
 import javax.swing.Timer;
 
-/*public class PongGUI extends JPanel implements ActionListener, KeyListener{
-    private MAINPong game;
+public class PongPanel extends JPanel implements ActionListener, KeyListener {
+    private Pong game;
     private Ball ball;
     private Racket player1, player2;
     private int score1, score2;
-/*
-    public PongPanel(Pong game) { //FIXME:
+
+    public PongPanel(Pong game) {
         setBackground(Color.WHITE);
-        this.game = game; // fix this
-        ball = new Ball(game);//fix this
+        this.game = game;
+        ball = new Ball(game);
         player1 = new Racket(game, KeyEvent.VK_UP, KeyEvent.VK_DOWN, game.getWidth() - 36);
         player2 = new Racket(game, KeyEvent.VK_W, KeyEvent.VK_S, 20);
         Timer timer = new Timer(5, this);
@@ -77,6 +74,7 @@ import javax.swing.Timer;
         ;
     }
 
+    @Override
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         g.drawString(game.getPanel().getScore(1) + " : " + game.getPanel().getScore(2), game.getWidth() / 2, 10);
@@ -84,4 +82,4 @@ import javax.swing.Timer;
         player1.paint(g);
         player2.paint(g);
     }
-}*/
+}
