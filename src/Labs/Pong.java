@@ -9,7 +9,7 @@ import Components.GameComponents.Pong.PongPanel;
 import javax.swing.JFrame;
 
 public class Pong extends JFrame {
-    private final static int WIDTH = 700, HEIGHT = 450;
+    private final static int WIDTH = 1600, HEIGHT = 900;
     private PongPanel panel;
 
     public Pong() {

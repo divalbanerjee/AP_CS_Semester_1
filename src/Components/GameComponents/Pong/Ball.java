@@ -54,7 +54,7 @@ public class Ball{
 
         public void paint(Graphics g) {
             g.setColor(new Color(0,0,0));
-            g.fillRect(x, y, WIDTH, HEIGHT);
+            g.fillOval(x, y, WIDTH, HEIGHT);
         }
     }
 
