@@ -6,7 +6,7 @@ package Components.GameComponents.Pong;
  import java.awt.*;
 
 public class Racket {
-     private static final int WIDTH = 10, HEIGHT = 60;
+     private static final int WIDTH = 10, HEIGHT = 80;
      private Pong game;
      private int up, down;
      private int x;
@@ -44,7 +44,7 @@ public class Racket {
      public Rectangle getBounds() {return new Rectangle(x, y, WIDTH, HEIGHT);}
 
      public void paint(Graphics g) {
-           g.setColor(new Color(0,0,0));
+           g.setColor(new Color(100,255,255));
            g.fillRect(x, y, WIDTH, HEIGHT);
      }
  }

@@ -38,6 +38,7 @@ public class Ball{
                 ya = -ya;
             if (game.getPanel().getScore(1) == 10)
                 JOptionPane.showMessageDialog(null, "Player 1 wins", "Pong", JOptionPane.PLAIN_MESSAGE);
+
             else if (game.getPanel().getScore(2) == 10)
                 JOptionPane.showMessageDialog(null, "Player 2 wins", "Pong", JOptionPane.PLAIN_MESSAGE);
             checkCollision();
@@ -53,7 +54,7 @@ public class Ball{
         }
 
         public void paint(Graphics g) {
-            g.setColor(new Color(0,0,0));
+            g.setColor(new Color(255,255,255));
             g.fillOval(x, y, WIDTH, HEIGHT);
         }
     }

@@ -16,15 +16,16 @@ public class PongPanel extends JPanel implements ActionListener, KeyListener {
     private int score1, score2;
 
     public PongPanel(Pong game) {
-        setBackground(Color.WHITE);
+        setBackground(Color.BLACK);
         this.game = game;
         ball = new Ball(game);
         player1 = new Racket(game, KeyEvent.VK_UP, KeyEvent.VK_DOWN, game.getWidth() - 36);
         player2 = new Racket(game, KeyEvent.VK_W, KeyEvent.VK_S, 20);
-        Timer timer = new Timer(5, this);
+        Timer timer = new Timer(2, this);
         timer.start();
         addKeyListener(this);
         setFocusable(true);
+       // repaint();
     }
 
     public Racket getPlayer(int playerNo) {
@@ -77,6 +78,7 @@ public class PongPanel extends JPanel implements ActionListener, KeyListener {
     public void paintComponent(Graphics g) {
         super.paintComponent(g);
         g.setFont(new Font("Helvetica",Font.BOLD, 30));
+        g.setColor(Color.WHITE);
         g.drawString(game.getPanel().getScore(1) + " : " + game.getPanel().getScore(2), game.getWidth() / 2, 40);
         ball.paint(g);
         player1.paint(g);
